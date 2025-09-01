@@ -33,7 +33,7 @@
             max-width: 1200px;
             margin: 0 auto;
             padding: 0 20px;
-                background-color: var(--light-color);
+               
         }
 
         /* Header */
@@ -150,6 +150,7 @@
             box-shadow: var(--shadow);
             transition: var(--transition);
             text-align: center;
+                 background-color: whitesmoke;
         }
 
         .feature-card:hover {
@@ -369,4 +370,5 @@
             margin-top: 2rem;
         }
     
+
 
