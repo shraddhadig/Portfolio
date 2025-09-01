@@ -33,6 +33,7 @@
             max-width: 1200px;
             margin: 0 auto;
             padding: 0 20px;
+                background-color: var(--light-color);
         }
 
         /* Header */
@@ -368,3 +369,4 @@
             margin-top: 2rem;
         }
     
+
