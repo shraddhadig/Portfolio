@@ -1,376 +1,181 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" 
-          content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
-    <link rel="stylesheet" 
-          href=
-"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
-          integrity=
-"sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
-             crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <script src="script.js"></script>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="responsive.css">
+   
 </head>
-
 <body>
-    <!-- Navbar header section -->
+    <!-- Header -->
     <header class="header">
-        <nav class="navbar">
-            <div class="logo">
-                <h2 class="logo-heading">Shraddha Dighe</h2>
-            </div>
-            <div class="hamburger" id="hamburger">
-                <i class="fas fa-bars hamburger-icon"></i>
-                <i class="fas fa-times cross-icon"></i>
-            </div>
-            <div class="menu">
-                <ul class="menu-list">
-                    <li class="menu-list-items">
-                        <a class="links" href="#home">
-                              Home
-                          </a>
-                    </li>
-                    <li class="menu-list-items">
-                        <a class="links" href="#portfolio">
-                              Portfolio
-                          </a>
-                    </li>
-                    <li class="menu-list-items">
-                        <a class="links" href="#about">
-                              About
-                          </a>
-                    </li>
-                    <li class="menu-list-items">
-                        <a class="links" href="#services">
-                              Services
-                          </a>
-                    </li>
-                    <li class="menu-list-items">
-                        <a class="links" href="#contact">
-                              Contact Me
-                          </a>
-                    </li>
+        <div class="container">
+            <nav class="nav">
+                <div class="logo">Shraddha Dighe</div>
+                <ul class="nav-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#features">Features</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
                 </ul>
-            </div>
-        </nav>
+                <div class="menu-toggle">☰</div>
+            </nav>
+        </div>
     </header>
 
-    <!-- Main hero banner -->
+    <!-- Hero Section -->
     <section id="home" class="hero">
         <div class="intro">
             <div class="headings">
                 <h3 class="greet-heading" style="color:white;">Hello, I'm</h3>
                 <h1 class="my-heading" style="color: blue;">Shraddha Dighe</h1>
                 <h4 class="sub-heading">
-                    I am a passionate Front-End Developer with expertise in building dynamic and responsive web applications
+                       I am a passionate Front-End Developer with expertise in building dynamic and responsive web applications
                 </h4>
             </div>
+            
             <div class="intro-buttons">
-                <button class="btn common-btn">Hire Me</button>
-                <button class="btn ghost-btn">Get Resume</button>
+                <a class="btn common-btn">Hire Me</a>
+                <!-- <button class="btn ghost-btn" >Get Resume</button>
+                  -->
+
+                  <a href="Shraddha_Dighe_CV (1) (2).pdf" download class="btn ghost-btn">Get Resume</a>
+
+
+            </div>
+        
+    </section>
+
+    <!-- Features Section -->
+    <section class="features" id="features">
+        <div class="container">
+            <h2>Technical Skills</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">🔒</div>
+                    <h3>HTML5</h3>
+                    <p> HTML5 is the foundation of modern web development, providing a
+                             structured and semantic way to build web pages.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">📱</div>
+                    <h3> CSS(Cascading Style Sheets)</h3>
+                    <p>  CSS is used to style
+                             and layout web pages. It controls colors, fonts, spacing, and
+                              positioning of elements, making websites visually responsive.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🔒</div>
+                    <h3>JavaScript</h3>
+                    <p>JavaScript is used for
+                             building interactive and dynamic web applications. It enables DOM manipulation, 
+                             event handling, and asynchronous programming (AJAX, Fetch API, Promises, Async/Await).</p>
+                </div>
+            </div>
+            <br><br>
+             
+        <div class="container">
+    
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">🔒</div>
+                    <h3>Bootstrap</h3>
+                    <p>Bootstrap is a powerful CSS framework used to create responsive,
+                             mobile-first web designs quickly. It includes a grid system, 
+                             pre-designed components (buttons, modals, navbars), and utility
+                              classes for styling without writing extensive CSS.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">📱</div>
+                    <h3>Angular</h3>
+                    <p> Angular developers need expertise in TypeScript, RxJS, 
+                            and Angular CLI to build scalable web applications. They 
+                            must understand component-based architecture, two-way data binding,
+                             dependency injection,</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🔒</div>
+                    <h3>Java</h3>
+                    <p>ava is a powerful, object-oriented programming language 
+                            widely used for building web applications, mobile apps (Android), 
+                            enterprise software, and backend systems. Key Java skills include OOP 
+                            principles</p>
+                </div>
             </div>
         </div>
     </section>
 
     <!-- Portfolio Section -->
     <section class="portfolio" id="portfolio">
-        <div class="portfolio-heading">
-            <h1 class="my-heading text-center">Project</h1>
-        </div>
-        <div class="portfolio-content">
-            <div class="my-row">
-                <div class="my-col">
-                    <div class="my-card port-card">
-                        <div class="image">
-                            <img src="m1.png" 
-                                 alt="Web Design Image">
-                        </div>
-                        <h3 class="greet-heading blue-text">Web Design</h3>
-                        <p class="small-para blue-text">Designing</p>
+        <div class="container">
+            <h2>Project</h2>
+            <div class="portfolio-grid">
+                <div class="portfolio-item">
+                    <div class="portfolio-image">
+                        <img src="m1.png" alt="Modern e-commerce website with clean user interface and shopping cart functionality" />
+                    </div>
+                    <div class="portfolio-content">
+                        <h3>E-Commerce Platform</h3>
+                        <p>Fully responsive online store with secure payment processing.</p>
                     </div>
                 </div>
-                <div class="my-col">
-                    <div class="my-card port-card">
-                        <div class="image">
-                            <img src="m2.png" 
-                                 alt="Web Development Image">
-                        </div>
-                        <h3 class="greet-heading blue-text">
-                              Carousal
-                          </h3>
-                        <p class="small-para blue-text">Development</p>
+                <div class="portfolio-item">
+                    <div class="portfolio-image">
+                        <img src="m2.png" alt="Corporate business dashboard with data visualizations and analytics" />
+                    </div>
+                    <div class="portfolio-content">
+                        <h3>Multikart Website</h3>
+                        <p>Launch your dream online store with Multikart – a modern, responsive template designed for every kind of business.</p>
                     </div>
                 </div>
-                <div class="my-col">
-                    <div class="my-card port-card">
-                        <div class="image">
-                            <img src="m3.png" alt="SEO Image">
-                        </div>
-                        <h3 class="greet-heading blue-text">SEO</h3>
-                        <p class="small-para blue-text">Optimization</p>
+                <div class="portfolio-item">
+                    <div class="portfolio-image">
+                        <img src="m3.png" alt="Mobile app interface with clean design and intuitive user experience" />
                     </div>
-                </div>
-            </div>
-          
-            </div>
-        </div>
-    </section>
-
-    <!-- About Section -->
-    <section id="about" class="about">
-        <div class="about-text">
-            <h1 class="my-heading">About Me</h1>
-            <p class="lead-para">
-                My name is Shraddha, and I am from Pune. I have pursing my 
-                Bachelor's in ENTC from SPPU University. I have a strong foundation in JavaScript, 
-                HTML, CSS  and Angular front-end development.  JAVA and sql for  back-end  
-                During my studies, I worked on a project where I built a full-stack web application. 
-                </p>
-                <p>
-                I am a quick learner and passionate about solving real-world problems through technology. 
-                I am excited about this opportunity and eager to contribute to your team
-            </p>
-           
-        </div>
-        <div class="about-image">
-            <img src="IMG_9627.jpg" alt="About Image">
-        </div>
-    </section>
-
-    <!-- Services Section -->
-    <section class="services" id="services">
-        <div class="services-heading">
-            <h1 class="my-heading text-center">My Skills</h1>
-        </div>
-        <div class="services-content">
-            <div class="my-row">
-                <div class="my-col">
-                    <div class="my-card">
-                        <div class="icon">
-                            <i class="fa-solid fa-code"></i>
-                        </div>
-                        <h3 class="greet-heading blue-text">HTML 5</h3>
-                        <p class="small-para">
-                            HTML5 is the foundation of modern web development, providing a
-                             structured and semantic way to build web pages. 
-                             It introduces new elements like header, article, and section tag
-                                for better content organization, improves multimedia support with audio and video tag, 
-                                and enhances form handling with new input types and attributes.
-                        </p>
-                        <p class="small-para">
-                            HTML5 also enables offline capabilities, better accessibility, 
-                            and seamless integration with CSS3
-                             and JavaScript for creating responsive and interactive web applications.
-                        </p>
-                    </div>
-                </div>
-                <div class="my-col">
-                    <div class="my-card">
-                        <div class="icon">
-                            <i class="fa-brands fa-css3"></i>
-                        </div>
-                        <h3 class="greet-heading blue-text">
-                              CSS(Cascading Style Sheets)
-                          </h3>
-                        <p class="small-para">
-                            CSS is used to style
-                             and layout web pages. It controls colors, fonts, spacing, and
-                              positioning of elements, making websites visually responsive. 
-                              With techniques like Flexbox, Grid, and Media Queries. Advanced features such as animations, transitions, 
-                              and custom properties  enhance user experience.
-                              
-                        </p>
-                        <p class="small-para">
-                            Frameworks like Bootstrap  simplify styling,
-                                while preprocessors like SASS/SCSS offer better maintainability. 
-                                Mastering CSS is crucial for creating modern, responsive, and interactive 
-                                web applications
-                        </p>
-                    </div>
-                </div>
-                <div class="my-col">
-                    <div class="my-card">
-                        <div class="icon">
-                            <i class="fa-brands fa-js"></i>
-                        </div>
-                        <h3 class="greet-heading blue-text">JavaScript</h3>
-                        <p class="small-para">
-                            JavaScript is a powerful, versatile programming language for
-                             building interactive and dynamic web applications. It enables DOM manipulation, 
-                             event handling, and asynchronous programming (AJAX, Fetch API, Promises, Async/Await). 
-                             Key skills include ES6+ features (let/const, arrow functions,
-                             template literals, destructuring, modules), working with APIs, handling state management
-                        </p>
-                        <p class="small-para">
-                            Understanding performance optimization and security best practices is crucial for writing efficient and secure JavaScript code.
-                    </div>
-                </div>
-            </div>
-            <div class="my-row">
-                <div class="my-col">
-                    <div class="my-card">
-                        <div class="icon">
-                            <i class="fa-brands fa-bootstrap"></i>
-                        </div>
-                        <h3 class="greet-heading blue-text">
-                              BootStrap
-                          </h3>
-                        <p class="small-para">
-                            Bootstrap is a powerful CSS framework used to create responsive,
-                             mobile-first web designs quickly. It includes a grid system, 
-                             pre-designed components (buttons, modals, navbars), and utility
-                              classes for styling without writing extensive CSS. With built-in 
-                              support for Flexbox and media queries, Bootstrap ensures seamless 
-                              adaptability across all screen sizes.  
-                        </p>
-                        <p class="small-para">
-                            It also integrates with JavaScript plugins 
-                            for interactive elements, making it a go-to choice for modern front-end development. It is used for developing responsive.
-                        </p>
-                    </div>
-                </div>
-                <div class="my-col">
-                    <div class="my-card">
-                        <div class="icon">
-                            <i class="fa-brands fa-angular"></i>
-                        </div>
-                        <h3 class="greet-heading blue-text">
-                               Angular
-                          </h3>
-                        <p class="small-para">
-                            Angular developers need expertise in TypeScript, RxJS, 
-                            and Angular CLI to build scalable web applications. They 
-                            must understand component-based architecture, two-way data binding,
-                             dependency injection, and routing for efficient development. Proficiency 
-                             in state management (NgRx, Akita), RESTful APIs, and lazy loading ensures 
-                             high-performance apps.
-                        </p>
-                        <p class="small-para">
-                            Strong skills in responsive design (Bootstrap, Tailwind CSS) 
-                           essential for creating robust and maintainable applications
-                             
-                        </p>
-                    </div>
-                </div>
-                <div class="my-col">
-                    <div class="my-card">
-                        <div class="icon">
-                            <i class="fa-brands fa-java"></i>
-                        </div>
-                        <h3 class="greet-heading blue-text">
-                              Java
-                          </h3>
-                        <p class="small-para">
-                            ava is a powerful, object-oriented programming language 
-                            widely used for building web applications, mobile apps (Android), 
-                            enterprise software, and backend systems. Key Java skills include OOP 
-                            principles (encapsulation, inheritance, polymorphism), multithreading,
-                             exception handling, collections framework,
-                             JDBC for database connectivity, and Spring Boot for web development. 
-                        </p>
-                        <p class="small-para">
-                            Understanding Java’s memory management,
-                             garbage collection, and performance
-                              optimization is crucial for efficient coding. 
-                        </p>
+                    <div class="portfolio-content">
+                        <h3>Mobile App UI</h3>
+                        <p>User-friendly mobile application interface with smooth animations.</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Contact me section -->
+    <!-- Contact Section -->
     <section class="contact" id="contact">
-        <div class="contact-heading">
-            <h1 class="my-heading text-center">Contact Me</h1>
-        </div>
-        <div class="contact-content">
-            <div class="contact-form-container">
-                <h1 class="greet-heading">Get In Touch</h1>
+        <div class="container">
+            <div class="contact-content">
+                <h2>Get In Touch</h2>
+                <p>shraddhadighe2019@gmail.com</p>
                 <form class="contact-form">
-                    <input class="form-controls" type="text" 
-                           placeholder="Your Name">
-                    <input class="form-controls" type="text" 
-                           placeholder="Your Email">
-                    <input class="form-controls" type="text" 
-                           placeholder="Your Phone">
-                    <textarea class="form-controls" 
-                              placeholder="Write your message" 
-                              name="message" id="" cols="30"
-                              rows="10">
-                      </textarea>
-                    <input class="form-btn btn common-btn" 
-                           type="submit" value="Send Message">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" placeholder="Tell us about your project" required></textarea>
+                    </div>
+                    <button type="submit" class="btn">Send Message</button>
                 </form>
             </div>
-            <div class="contact-details">
-                <h1 class="greet-heading">My Contact Details</h1>
-                <div class="details">
-                    <h5 class="contact-heading">EMAIL</h5>
-                    <p class="contact-text">shraddhadighe2019@gmail.com</p>
-                </div>
-                <div class="details">
-                    <h5 class="contact-heading">PHONE</h5>
-                    <p class="contact-text">+91 0123456789</p>
-                </div>
-              
-                <div class="details">
-                    <h5 class="contact-heading">ADDRESS</h5>
-                    <p class="contact-text">Wagholi, Pune</p>
-                
-                </div>
-            </div>
         </div>
     </section>
 
-    <!-- Footer section -->
+    <!-- Footer -->
     <footer class="footer">
-        <div class="footer-content text-center">
-            <h4>
-                Copyright © 2023 All rights reserved |
-                This portfolio website template is created 
-                  by Shraddha Dighe.
-            </h4>
-            <div class="social-links">
-                <div class="footer-menu">
-                    <ul class="footer-menu-list">
-                        <li class="footer-list-items">
-                            <a class="footer-links" href="#">
-                                <i class="fab fa-facebook-f"></i>
-                            </a>
-                        </li>
-                        <li class="footer-list-items">
-                            <a class="footer-links" href="#">
-                                <i class="fab fa-twitter"></i>
-                            </a>
-                        </li>
-                        <li class="footer-list-items">
-                            <a class="footer-links" href="#">
-                                <i class="fab fa-instagram"></i>
-                            </a>
-                        </li>
-                        <li class="footer-list-items">
-                            <a class="footer-links" href="#">
-                                <i class="fab fa-linkedin-in"></i>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
+        <div class="container">
+            <p>© 2025 ShraddhaDighe. All rights reserved.</p>
         </div>
     </footer>
 
-    <script src=
-"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/js/all.min.js"
-        integrity=
-"sha512-uKQ39gEGiyUJl4AI6L+ekBdGKpGw4xJ55+xyJG7YFlJokPNYegn9KwQ3P8A7aFQAUtUsAQHep+d/lrGqrbPIDQ=="
-        crossorigin="anonymous" referrerpolicy="no-referrer">
-      </script>
-    <script src="script.js"></script>
+   
 </body>
-
 </html>
+
